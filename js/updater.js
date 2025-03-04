@@ -1,4 +1,4 @@
-import { day, month, year, output } from "./elements.js";
+export { day, month, year, output } from "./elements.js";
 
 function checkValid() {
   // Check the HTML element validity
@@ -15,7 +15,7 @@ function checkValid() {
   return true;
 }
 
-function update() {
+export function update() {
   // Guard clause to validate user inputs
   if (!checkValid()) {
     return;

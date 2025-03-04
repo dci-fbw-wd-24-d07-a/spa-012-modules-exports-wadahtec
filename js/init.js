@@ -1,7 +1,7 @@
 import { day, month, year } from "./elements.js";
-import update from "./updater.js";
+import { update } from "./updater.js";
 
-function init() {
+ export function init() {
   // Initialize input default values
   const now = new Date();
   day.value = now.getDay();
